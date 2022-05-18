@@ -87,4 +87,19 @@ public class BodyParameter extends AbstractParameter implements Parameter {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "BodyParameter{" +
+                "schema=" + schema +
+                ", examples=" + examples +
+                ", in='" + in + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", required=" + required +
+                ", access='" + access + '\'' +
+                ", pattern='" + pattern + '\'' +
+                ", readOnly=" + readOnly +
+                '}';
+    }
 }
